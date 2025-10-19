@@ -1,0 +1,472 @@
+		/* GLOBAL */
+
+		body {
+			margin: auto;
+			width: 100%;
+			font-size: 28px;
+			font-family: "Alliance No.2", Helvetica, sans-serif;
+			background-color: #F5F3F1;
+		}
+
+		h1, h2, h3, h4, h5, h6, p, li {
+			font-family: "Alliance No.2";
+		}
+
+		h1 {
+			font-size: 60px;
+			line-height: 1.3em;
+		}
+
+		h2 {
+			font-size: 36px;
+			line-height: 50px;
+			font-weight: 700;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		h2.big {
+			font-size: 50px;
+			line-height: 122%;
+			font-weight: 700;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		h2.section-intro {
+			font-size: 41px;
+			line-height: 122%;
+			font-weight: 700;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		
+		h2.huge {
+			font-size: 7.7rem;
+			margin-bottom: 53px;
+		}
+
+		h4 {
+			font-size: 20px;
+			line-height: 1.3em;
+			font-weight: 600;
+			margin-bottom: 20px;
+		}
+
+		h5 {
+			font-size: 20px;
+			line-height: 1.3em;
+			font-weight: 600;
+			margin-top: 0px;
+			margin-bottom: 60px;
+			text-transform: uppercase;
+		}
+
+		h5.section-intro {
+			margin-bottom: 20px;
+		}
+
+		h3 {
+			font-size: 23px;
+			line-height: 1.3em;
+			font-weight: 600;
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-size: 19px;
+			line-height: 1.55em;
+			margin-top: 0px;
+			font-weight: 300;
+		}
+
+		p.big {
+			font-size: 26px;
+			line-height: 1.9em;
+			margin-top: 0px;
+			font-weight: 300;
+		}
+
+		a.white {
+			color: white;
+		}
+
+		a.white:hover {
+			color: orange;
+		}
+
+		.padding {
+		 	padding: 10px;
+		}
+
+		.big-pad {
+		 	padding: 60px;
+		}
+
+		.marg {
+			margin: 20px;
+		}
+
+		.shad {
+			box-shadow: #00000040 0px 4px 3px 0px;
+			border-radius: 11px;
+		}
+
+		.t-l {
+			text-align: left;
+		}
+
+		.t-c {
+			text-align: center;
+		}
+
+		.white {
+			background-color: #EFEFEF;
+		}
+
+		.dark-white {
+			background-color: #F4F4F4;
+		}
+
+		.grey {
+			background-color: #1a1a1a;
+		}
+
+		.purp-grad {
+			background-image: linear-gradient(45deg, #8E8DC4,#EDB0C3);
+		}
+
+		.orange-grad {
+			background-image: linear-gradient(0deg, #F58625,#FFE7CA);
+		}
+
+		.grey-f {
+			color: #868686;
+		}
+
+		.steel {
+        	background-color: #212728;
+    	}
+
+
+
+
+		/* FLEX */
+
+		.flex-box {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.flex-box-rev {
+			display: flex;
+			flex-direction: row-reverse;
+		}
+
+		.flex-col {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.fl-80 {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 80%;
+		}
+
+		.fl-75 {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 75%;
+		}
+
+		.fl-50 {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 50%;
+		}
+
+		.fl-60 {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 60%;
+		}
+
+		.fl-25 {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 25%;
+		}
+
+		.fl-20 {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 20%;
+		}
+
+		.fl-33 {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 33%;
+		}
+
+		.j-c {
+			justify-content: center;
+		}
+
+		.sp-b {
+			justify-content: space-between;
+		}
+
+		.j-fl-st {
+			justify-content: flex-start;
+		}
+
+		.al-c {
+			align-items: center;
+		}
+
+		.fl-wr {
+			flex-wrap: wrap;
+		}
+
+
+		/* CONTAINERS */
+
+		.container {
+		 	max-width: 1320px;
+		 	width: 100%;
+		 	padding: 30px;
+		}
+
+		.container-2 {
+		 	max-width: 1220px;
+		 	width: 100%;
+		 	padding: 30px;
+		}
+
+		.h-cont {
+			max-width: 1440px;
+			min-height: 752px;
+			width: 100%;
+		}
+
+		.w-cont {
+			max-width: 1240px;
+			width: 100%;
+			margin: auto;
+		}
+
+		.big-cont {
+			max-width: 1960px;
+			width: 100%;
+			margin: auto;
+		}
+
+		.col-l {
+			padding-right: 50px;
+		}
+
+		.col-r {
+			padding: 50px 0px 50px 50px;
+			margin-top: 20px;
+		}
+
+		.stat {
+			margin: 33px 33px 93px 33px;
+		}
+
+		.about-photo {
+			padding: 67px;
+		}
+
+
+		/* NAV */
+
+		.header {
+		 	background-color: #1a1a1a;
+		}
+
+		#top-nav {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: auto;
+		}
+
+		#navbar {
+		 	background-color: #222;
+		 	transition: top 0.3s;
+		 	display: flex;
+		 	flex-direction: row;
+		}
+
+		#navbar a {
+		 	display: block;
+		 	text-align: center;
+		 	padding: 20px 26px;
+		 	text-decoration: none;
+		 	font-size: 17px;
+		 	color: white;
+		}
+
+		 #navbar a:hover {
+		 	background-color: skyblue;
+		 	color: black;
+		 	text-decoration: underline;
+		}
+
+		 #navbar a.active {
+		 	background-color: #5CD5FB;
+		 	color: black;
+		}
+
+
+		/* HOME */
+
+		#intro {
+		 	background-color: #ffffff;
+		}
+
+		.intro-inner {
+			padding: 60px 20px 60px 20px;
+		}
+
+		.card {
+		 	margin: 50px;
+		 	max-width: 550px;
+		}
+
+		.card img {
+		 	box-shadow: #00000040 0px 4px 3px;
+		 	border-radius: 10px;
+		}
+
+		.card > h3 {
+			font-family: "Alliance No.2";
+			color: black;
+			font-size: 28px;
+			margin-bottom: 2px;
+		}
+
+		.card > p {
+			color: black;
+			font-size: 1rem;
+			line-height: 1.5rem;
+			margin-top: 1rem;
+			font-weight: 400;
+		}
+
+		.card > a {
+			text-decoration: none;
+			color: black;
+		}
+
+		.card > a:hover {
+			text-decoration: underline;
+		}
+
+
+		/* PROJECT */
+
+		#hero {
+			padding: 80px 0px;
+		}
+
+		#intro {
+			min-height: 110vh;
+			padding: 80px 0px;
+		}
+
+		#about-intro {
+			padding: 60px 0px 0px 0px;
+			color: white;
+			background-color: #0a0a0a;
+		}
+
+		.callout {
+			padding: 80px 0px;
+		}
+
+		#about-photos {
+			background-color: #0a0a0a;
+		}
+
+		#pain-points {
+			min-height: 90vh;
+			padding: 80px 0px;
+		}
+
+		#research {
+			padding: 80px 0px;
+			color: white;
+		}
+
+		#outcomes {
+			min-height: 90vh;
+			padding: 80px 0px;
+			background-color: #0a0a0a;
+			color: white;
+		}
+
+		#results {
+			padding: 80px 0px;
+			background-color: #111;
+			color: white;
+		}
+
+		#reflective {
+			padding: 80px 0px;
+		}
+
+		#events {
+			min-height: 90vh;
+			padding: 40px 0px;
+			color: white;
+		}
+
+		#committees {
+			min-height: 90vh;
+			padding: 40px 0px;
+			color: black;
+		}
+
+		.blue-call {
+			padding: 40px 60px;
+			border-radius: 10px;
+			background-color: #c5e7ff;
+			margin-bottom: 20px;
+		}
+
+
+		/* ADDITIONAL CSS */
+
+		@media only screen and (max-width: 800px) {
+		
+		.flex-box {
+			flex-direction: column!important;
+		}
+
+		.flex-box-rev {
+			flex-direction: column!important;;
+		}
+		
+		.fl-50 {
+			flex-basis: 100%!important;
+		}
+
+		.col-l {
+			padding: 0px!important;
+		}
+		
+		.col-r {
+			padding: 0px!important;
+		}
+
+		h5 {
+			margin-bottom: 17px;
+		}
+
+		}
