@@ -382,12 +382,16 @@
 		}
 
 		#navbar a {
-		 	display: block;
 		 	text-align: center;
 		 	padding: 1.25rem 1.625rem;
 		 	text-decoration: none;
-		 	font-size: 1rem;
 		 	color: white;
+			align-items: center;
+			line-height: 1rem;
+			justify-content: center;
+			box-sizing: border-box;
+			font-size: 1rem;
+			line-height: 1.5rem;
 		}
 
 		 #navbar a:hover {
@@ -401,13 +405,16 @@
 		 	color: black;
 		}
 
+		#navbar > a > svg {
+			display: block;
+		}
+
 		.home-logo {
 			background-color: #222;
 			padding: 0.888rem;
 			border-radius: 5rem 5rem 0rem 5rem;
 			display: flex;
 		}
-
 
 		/* HOME */
 
@@ -537,7 +544,6 @@
 			margin-bottom: 1.222rem;
 		}
 
-
 		/* ADDITIONAL CSS */
 
 		@media only screen and (max-width: 1400px) {
@@ -645,6 +651,10 @@
 
 		.card {
 			margin: 10px;
+		}
+
+		.head-nav-gl {
+			display: none!important;
 		}
 
 		}
