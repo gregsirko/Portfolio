@@ -351,6 +351,17 @@
 
 		.header {
 		 	background-color: #1a1a1a;
+			background: rgba(255, 255, 255, 0.8);
+			backdrop-filter: blur(8px);
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+			position: sticky;
+			top: 0;
+			z-index: 1000;
+			transition: transform 0.222s ease;
+		}
+
+		.header.hidden {
+			transform: translateY(-100%);
 		}
 
 		#top-nav {
@@ -367,6 +378,7 @@
 		 	transition: top 0.3s;
 		 	display: flex;
 		 	flex-direction: row;
+			border-radius: 11px;
 		}
 
 		#navbar a {
@@ -387,6 +399,13 @@
 		 #navbar a.active {
 		 	background-color: #5CD5FB;
 		 	color: black;
+		}
+
+		.home-logo {
+			background-color: #111;
+			padding: 0.888rem;
+			border-radius: 5rem 5rem 0rem 5rem;
+			display: flex;
 		}
 
 
@@ -509,6 +528,15 @@
 
 		/* ADDITIONAL CSS */
 
+		@media only screen and (max-width: 1400px) {
+		
+			.about-photo {
+			margin: 1rem;
+			padding: 0px;
+		}
+
+		}
+
 		@media only screen and (max-width: 1000px) {
 		
 		.flex-box {
@@ -554,6 +582,10 @@
 
 		.container, .container-2 {
 			padding: 0px;
+		}
+
+		.home-logo {
+			margin-bottom: 0.8rem;
 		}
 
 		}
