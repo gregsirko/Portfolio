@@ -569,8 +569,8 @@
 			width: 100%;
 		}
 
-		#navbar {
-			display: block;
+		#navbar > a {
+			padding: 1.0rem;
 		}
 
 		h1 {
