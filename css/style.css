@@ -273,7 +273,7 @@
 		.fl-33 {
 			display: flex;
 			flex-direction: column;
-			flex-basis: 33%;
+			flex-basis: 33.33%;
 		}
 
 		.j-c {
@@ -379,6 +379,8 @@
 		 	display: flex;
 		 	flex-direction: row;
 			border-radius: 11px;
+			box-shadow: #00000040 0px 2px 2px 0px;
+			width: 100%;
 		}
 
 		#navbar a {
@@ -392,12 +394,14 @@
 			box-sizing: border-box;
 			font-size: 1rem;
 			line-height: 1.5rem;
+			justify-content: space-around;
 		}
 
 		 #navbar a:hover {
 		 	background-color: skyblue;
 		 	color: black;
 		 	text-decoration: underline;
+			border-radius: 7px;
 		}
 
 		 #navbar a.active {
@@ -414,7 +418,13 @@
 			padding: 0.888rem;
 			border-radius: 5rem 5rem 0rem 5rem;
 			display: flex;
+			box-shadow: #00000040 0px 2px 2px 0px;
 		}
+
+		.home-logo:hover {
+			background-color: skyblue
+		}
+
 
 		/* HOME */
 
@@ -542,6 +552,10 @@
 			font-size: 1.111rem;
 			color: white;
 			margin-bottom: 1.222rem;
+		}
+
+		.foot-menu > a:hover {
+			color: skyblue;
 		}
 
 		/* ADDITIONAL CSS */
