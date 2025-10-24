@@ -62,46 +62,64 @@
 	</section>
 	<section id="work" class="flex-col j-c al-c dark-white-2">
 		<div class="container">
+			<div class="flex-box proj-buttons-cont">
+				<a href="#ritacms" class="btn">Club Portal</a>
+				<a href="#milo" class="btn">Productivity</a>
+				<a href="#nurture-life" class="btn">eCommerce Web</a>
+				<a href="#united-cargo" class="btn">Mobile app</a>
+			</div>
 			<div class="padding">
-				<div class="flex-box j-c al-c fl-wr">
-					<div class="card">
+				<div class="flex-box al-c scroll-box">
+					<div id="ritacms" class="card">
 						<a href="work/rita-cms/"><img src="media/rita-cms-thumb.png" width="100%"></a>
 						<a href="work/rita-cms/"><h3>Rita CMS -- Software Development</h3></a>
 						<p>WordPress web app for club management</p>
 						<p style="color: grey;">#UXDesign #WordPress #Dataverse #API #PHP #Twig #FetchXML</p>
 					</div>
-					<div class="card">
+					<div id="milo" class="card">
+						<a href="work/milo/"><img src="media/milo-thumb.png" width="100%"></a>
+						<a href="work/milo/"><h3>Milo -- Power Apps Development</h3></a>
+						<p>Project management Power App for internal teams</p>
+						<p style="color: grey;">#UXDesign #PowerApps #UI #CRM #Dataverse</p>
+					</div>
+					<div id="nurture-life" class="card">
+						<a href="work/nurture-life/"><img src="media/nurture-life-thumb.png" width="100%"></a>
+						<a href="work/nurture-life/"><h3>Nurture Life -- UX Design</h3></a>
+						<p>eCommerce experience flows for a meal service website</p>
+						<p style="color: grey;">#UXDesign #eCommerce #UI #AI #CustomerJourney</p>
+					</div>
+					<div id="united-cargo" class="card">
+						<a href="work/united-cargo/"><img src="media/united-card.png" width="100%"></a>
+						<a href="work/united-cargo/"><h3>United Cargo -- UX Design</h3></a>
+						<p>Cargo shipment mobile app for United Airlines</p>
+						<p style="color: grey;">#UXDesign #WordPress #CSS #HTML #JavaScript</p>
+					</div>
+					<div id="ritacms" class="card">
+						<a href="work/rita-cms/"><img src="media/rita-cms-thumb.png" width="100%"></a>
+						<a href="work/rita-cms/"><h3>Rita CMS -- Software Development</h3></a>
+						<p>WordPress web app for club management</p>
+						<p style="color: grey;">#UXDesign #WordPress #Dataverse #API #PHP #Twig #FetchXML</p>
+					</div>
+					<div id="milo" class="card">
 						<a href="work/milo/"><img src="media/milo-thumb.png" width="100%"></a>
 						<a href="work/milo/"><h3>Milo -- Power Apps Development</h3></a>
 						<p>Project management Power App for internal teams</p>
 						<p style="color: grey;">#UXDesign #PowerApps #UI #CRM #Dataverse</p>
 					</div>
 					<div class="card">
-						<a href="work/nurture-life/"><img src="media/nurture-life-thumb.png" width="100%"></a>
-						<a href="work/nurture-life/"><h3>Nurture Life -- UX Design</h3></a>
-						<p>eCommerce experience flows for a meal service website</p>
-						<p style="color: grey;">#UXDesign #eCommerce #UI #AI #CustomerJourney</p>
-					</div>
-					<div class="card">
-						<a href="work/united-cargo/"><img src="media/united-card.png" width="100%"></a>
-						<a href="work/united-cargo/"><h3>United Cargo -- UX Design</h3></a>
-						<p>Cargo shipment mobile app for United Airlines</p>
-						<p style="color: grey;">#UXDesign #WordPress #CSS #HTML #JavaScript</p>
-					</div>
-					<div class="card">
-						<img src="media/jcma-card.png" width="100%">
+						<a href=""><img src="media/jcma-card.png" width="100%"></a>
 						<h3>JCMA -- Web Design</h3>
 						<p>Web and brand overhaul for a digital design and marketing company</p>
 						<p style="color: grey;">#UXDesign #WordPress #Typography #Brand #DesignSystem</p>
 					</div>
 					<div class="card">
-						<img src="media/darna-thumb.png" width="100%">
+						<a href=""><img src="media/darna-thumb.png" width="100%"></a>
 						<h3>Darna -- WordPress Development</h3>
 						<p>Website design and development for an international liquer company</p>
 						<p style="color: grey;">#UXDesign #WordPress #CSS #HTML #JavaScript</p>
 					</div>
 					<div class="card">
-						<img src="media/ford-card.png" width="100%">
+						<a href=""><img src="media/ford-card.png" width="100%"></a>
 						<h3>FordPass -- UX Design</h3>
 						<p>Automotive companion app for Ford Motor Company</p>
 						<p style="color: grey;">#UserResearch #UXDesign #Prototyping #UI</p>
@@ -149,5 +167,23 @@
 		</div>
 	</footer>
 	<script src="js/sticky-nav.js"></script>
+	<script>
+		const scrollBox = document.querySelector('.scroll-box');
+		const buttons = document.querySelectorAll('.btn');
+
+		buttons.forEach(btn => {
+		btn.addEventListener('click', e => {
+			e.preventDefault();
+			const targetId = btn.getAttribute('href');
+			const target = document.querySelector(targetId);
+			if (target) {
+			scrollBox.scrollTo({
+				left: target.offsetLeft - scrollBox.offsetLeft,
+				behavior: 'smooth'
+			});
+			}
+		});
+		});
+	</script>
 </body>
 </html>

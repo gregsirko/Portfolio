@@ -60,6 +60,7 @@
 		html {
 			font-family: "Alliance No.2", sans-serif;
 			font-size: 16px; /* base size */
+			scroll-behavior: smooth;
 		}
 
 		h1, h2, h3, h4, h5, h6, p, li {
@@ -147,6 +148,22 @@
 
 		a.white:hover {
 			color: orange;
+		}
+
+		.btn {
+			padding: 0.777rem;
+			font-size: 1rem;
+			color: black;
+			border: 2px solid black;
+			border-radius: 11px;
+			font-weight: 500;
+			text-decoration: none;
+			margin: 0.5rem;
+		}
+		.btn:hover {
+			color: skyblue;
+			background-color: #000;
+			text-decoration: underline;
 		}
 
 		.padding {
@@ -300,7 +317,7 @@
 		/* CONTAINERS */
 
 		.container {
-		 	max-width: 1320px;
+		 	max-width: 2020px;
 		 	width: 100%;
 		 	margin: 1.875rem;
 		}
@@ -436,9 +453,36 @@
 			padding: 60px 20px 60px 20px;
 		}
 
+		.scroll-box {
+			scroll-snap-align: center;
+			display: flex;
+			overflow-x: auto;
+			scroll-snap-type: x mandatory;
+			scroll-behavior: smooth;
+			scrollbar-width: none; /* Firefox */
+			-ms-overflow-style: none; /* IE + Edge Legacy */
+			position: relative;
+
+		}
+
+		.scroll-box::-webkit-scrollbar {
+			display: none; /* Chrome, Safari, Opera */
+		}
+
 		.card {
-		 	margin: 3.125rem;
-		 	max-width: 550px;
+		 	margin: 1.111rem;
+		 	max-width: 40.08333rem;
+			scroll-snap-align: start;
+  			scroll-snap-stop: always;
+  			flex: 0 0 auto;
+		}
+
+		:target {
+			scroll-margin-top: 80px; /* match your header height */
+		}
+
+		.card > a > img {
+		 	width: 40.08333rem;
 		}
 
 		.card img {
@@ -562,7 +606,7 @@
 
 		@media only screen and (max-width: 1400px) {
 		
-			.about-photo {
+		.about-photo {
 			margin: 1rem;
 			padding: 0px;
 		}
@@ -628,6 +672,19 @@
 		footer {
 			padding: 1rem;
 		}
+
+		.card {
+			max-width: 100%;
+		}
+
+		.card > a > img {
+			width: 100%;
+		}
+
+		.proj-buttons-cont {
+			display: none;
+		}
+
 
 		}
 
