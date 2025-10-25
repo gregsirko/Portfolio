@@ -319,7 +319,7 @@
 		.container {
 		 	max-width: 2020px;
 		 	width: 100%;
-		 	margin: 1.875rem;
+		 	margin: 1rem;
 		}
 
 		.container-2 {
@@ -470,11 +470,15 @@
 		}
 
 		.card {
-		 	margin: 1.333rem;
-		 	max-width: 40.08333rem;
-			scroll-snap-align: start;
+		 	margin: 1vw;
+		 	max-width: 31vw;
+			scroll-snap-align: center;
   			scroll-snap-stop: always;
   			flex: 0 0 auto;
+		}
+
+		.proj-buttons-cont {
+			padding: 0px 1rem;
 		}
 
 		:target {
@@ -482,7 +486,7 @@
 		}
 
 		.card > a > img {
-		 	width: 40.08333rem;
+		 	width: 31vw;
 		}
 
 		.card img {
@@ -490,10 +494,15 @@
 		 	border-radius: 10px;
 		}
 
-		.card > h3 {
+		.card > a > h3 {
 			font-family: "Alliance No.2";
 			color: black;
-			font-size: 1.75rem;
+			font-size: 1.444rem;
+			margin-bottom: 0.125rem;
+		}
+
+		.card > h3 {
+			font-size: 1.444rem;
 			margin-bottom: 0.125rem;
 		}
 
