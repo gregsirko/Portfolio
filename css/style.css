@@ -479,6 +479,7 @@
 
 		.proj-buttons-cont {
 			padding: 0px 1rem;
+			margin-top: -0.5rem;
 		}
 
 		:target {
