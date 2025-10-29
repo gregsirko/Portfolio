@@ -526,13 +526,8 @@
 
 		/* PROJECT */
 
-		#hero {
-			padding: 5rem 0px;
-		}
-
 		#intro {
 			min-height: 110vh;
-			padding: 5rem 0px;
 		}
 
 		#about-intro {
@@ -541,51 +536,38 @@
 			background-color: #0a0a0a;
 		}
 
-		.callout {
-			padding: 5rem 0px;
-		}
-
 		#about-photos {
 			background-color: #0a0a0a;
 		}
 
 		#pain-points {
 			min-height: 90vh;
+		}
+
+		#artifacts {
+			min-height: 90vh;
+		}
+
+		.sec-pad {
 			padding: 5rem 0px;
 		}
 
-		#research {
-			padding: 5rem 0px;
+		.white-f {
 			color: white;
 		}
 
 		#outcomes {
 			min-height: 90vh;
-			padding: 5rem 0px;
 			background-color: #0a0a0a;
-			color: white;
 		}
 
 		#results {
-			padding: 5rem 0px;
 			background-color: #111;
-			color: white;
 		}
 
-		#reflective {
-			padding: 5rem 0px;
-		}
-
-		#events {
+		#next {
 			min-height: 90vh;
 			padding: 2.5rem 0px;
-			color: white;
-		}
-
-		#committees {
-			min-height: 90vh;
-			padding: 2.5rem 0px;
-			color: black;
 		}
 
 		.blue-call {
