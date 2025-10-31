@@ -9,9 +9,10 @@
 	<link href="../../css/style.css" rel="stylesheet">
 	<title>Rita CMS – UX Design & Development Case Study | Microsoft Power Apps | WordPress | Twig | FetchXML | PHP</title>
 	<link rel="icon" href="../../favicon.ico">
+	<link href="../../css/slideshow.css" rel="stylesheet">
 </head>
 <body class="flex-col j-c">
-	<section id="top-nav" class="header flex-col j-c al-c">
+	<section id="top-nav" class="header flex-col j-c al-c grey">
 		<div class="container">
 			<div class="padding">
 				<div class="flex-box sp-b al-c fl-wr padding">
@@ -118,7 +119,7 @@
 					<div class="fl-50 j-fl-st col-r marg t-l">
 						<h5>Context</h5>
 						<h2>A custom, responsive WordPress app for club membership management.</h2>
-						<p>Serving as the pioneering user group, the Valparaiso Noon Kiwanis club of 300+ members were the first give Rita CMS life. Kiwanis engages in community outreach programs, fundraising, accesible platform construction, house rehab, and exciting things that give back. The club uses the app to share files, create events and meetings, manage membership, use internal messaging, and much more.</p>
+						<p>Serving as the pioneering user group, the Valparaiso Noon Kiwanis club of 300+ members were the first give Rita CMS life. Kiwanis engages in community outreach programs, fundraising, accessible platform construction, house rehab, and exciting things that give back. The club uses the app to share files, create events and meetings, manage membership, use internal messaging, and much more.</p>
 					</div>
 				</div>
 				<div class="flex-box al-c">
@@ -171,7 +172,7 @@
 						<img class="shad" src="../../media/accessible-user-interface.png" alt="" width="100%">
 					</div>
 					<div class="fl-50 j-fl-st col-r marg t-l" style="padding-top: 0px;">
-						<h3>Accesible, intuive user interface</h3>
+						<h3>Accessible, intuive user interface</h3>
 						<p>The app's user interface needed to be accessible by multiple different kinds of user groups with different needs. To accomplish this goal, I endeadvored to create a design system that was sleek, easy, and comfortable to use. The system employs comfrtable colors of light blues, navys, and whites. I avoided anything that would be hard to see or affect colorblindness. In addition, I used lots of rounded edges, largers buttons, and larger, bold fonts.</p>
 					</div>
 				</div>
@@ -227,7 +228,7 @@
 					</div>
 					<div class="fl-40 j-fl-st col-r marg t-l" style="padding-top: 0px;">
 						<h3>FetchXML for data retrieval</h3>
-						<p>Depending on your bias, there are a few ways to look at AI. In CX, our best intentions are in understanding how generative and algorithmic agents can integrate into our site to most effectively aid the user journey. Where along the customer journey can AI tools fill in gaps to surprise people, save their time, and provide clarity?</p>
+						<p>Most endpoints need to retrieve some kind of user-based data from Power Apps. A lot of my learning has been centered around to properly write and fromat FetchXML statements. Through, I've undesrstood how to pull in different Dataverse objects and find ways to filter them to pull the specific parameters or fields that I need.</p>
 					</div>
 				</div>
 			</div>
@@ -238,7 +239,7 @@
 					</div>
 					<div class="fl-40 j-fl-st col-r marg t-l" style="padding-top: 0px;">
 						<h3>Query string parameters</h3>
-						<p>Depending on your bias, there are a few ways to look at AI. In CX, our best intentions are in understanding how generative and algorithmic agents can integrate into our site to most effectively aid the user journey. Where along the customer journey can AI tools fill in gaps to surprise people, save their time, and provide clarity?</p>
+						<p>Another key functionality of the app is the ability pull in paremeters from different data objects and pass them to other endpoints via HTTP requests. Using different GET and POST methods allows to create user functionality allows us to create different interface pieces that users can interact and create their own content.</p>
 					</div>
 				</div>
 			</div>
@@ -249,7 +250,7 @@
 					</div>
 					<div class="fl-40 j-fl-st col-r marg t-l" style="padding-top: 0px;">
 						<h3>Customizable PHP endpoints</h3>
-						<p>Depending on your bias, there are a few ways to look at AI. In CX, our best intentions are in understanding how generative and algorithmic agents can integrate into our site to most effectively aid the user journey. Where along the customer journey can AI tools fill in gaps to surprise people, save their time, and provide clarity?</p>
+						<p>Every endpoint in our app comes from a PHP WooCommerce rewrite. Inside of that app, Fetch statements and Twig blocks are passed as PHP variables through a DataPress shortcode processor. Using PHP gives me the basis for a powerful, endlessly flexible and customizable means of creating a web app.</p>
 					</div>
 				</div>
 			</div>
@@ -272,7 +273,7 @@
 			<div class="flex-col">
 				<div class="col-l marg t-l">
 					<h5 class="section-intro">DELIVERABLE</h5>
-					<h2 class="section-intro">User-Focused Features</h2>
+					<h2 class="section-intro">Club-Powered Features</h2>
 				</div>
 			</div>
 		</div>
@@ -280,32 +281,82 @@
 			<div class="w-cont">
 				<div class="flex-box-rev al-c">
 					<div class="fl-50 col-r marg">
-						<img class="shad" src="../../media/holder-5.png" alt="" width="100%">
+						<img class="shad" src="../../media/mobile-dash.png" alt="" width="100%">
 					</div>
 					<div class="fl-50 j-fl-st col-l t-l marg">
 						<h2 class="big grey-f">01</h2>
-						<h2 class="big">Feature 1</h2>
-						<p>By creating committees within your organization, you can effectively manage and host events for all of your volunteering needs. You can schedule events specifically for these moments, and reach out to all committee members inside.</p>
+						<h2 class="big">Quick Actions</h2>
+						<p>Users can make use of a key container of powerful, specific actions from most screens. These forms exist throughout the app in different texts. A user can add events, add files, and more.</p>
 					</div>
 				</div>
 				<div class="flex-box-rev al-c">
 					<div class="fl-50 col-r marg">
-						<img class="shad" src="../../media/holder-5.png" alt="" width="100%">
+						<div class="scroll-container">
+							<div class="progress-bar">
+								<div class="progress-fill" id="progress"></div>
+							</div>
+							<div class="scroll-cards-box" id="scrollBox">
+								<div class="scroll-card"><img class="shad" src="../../media/profile-mobile.png" alt="" width="100%"></div>
+								<div class="scroll-card"><img class="shad" src="../../media/profile-pic.png" alt="" width="100%"></div>
+							</div>
+							<div class="buttons-box">
+								<button id="leftBtn">
+									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="white">
+									<path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+									</svg>
+								</button>
+								<button id="rightBtn">
+									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="white">
+									<path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+									</svg>
+								</button>
+							</div>
+						</div>
 					</div>
 					<div class="fl-50 j-fl-st col-l t-l marg">
 						<h2 class="big grey-f">02</h2>
-						<h2 class="big">Feature 2</h2>
-						<p>By creating committees within your organization, you can effectively manage and host events for all of your volunteering needs. You can schedule events specifically for these moments, and reach out to all committee members inside.</p>
+						<h2 class="big">Profile Creation</h2>
+						<p>Users can fill out profile information to share with other club members. In addition, a club member can upload their beautiful photo.</p>
+					</div>
+				</div>
+				<div class="flex-col sc-pad">
+					<div class="w-cont">
+						<div class="flex-box">
+							<div class="marg">
+								<h2 class="big grey-f">03</h2>
+								<h2>Users can then navigate through a members directory and view different other profiles.</h2>
+							</div>
+						</div>
+						<div class="flex-box">
+							<div class="flex-col marg">
+								<img class="shad" src="../../media/rita-cms-spread.png" alt="" width="100%">
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="flex-box-rev al-c">
 					<div class="fl-50 col-r marg">
-						<img class="shad" src="../../media/holder-5.png" alt="" width="100%">
+						<img class="shad" src="../../media/committees.png" alt="" width="100%">
 					</div>
 					<div class="fl-50 j-fl-st col-l t-l marg">
-						<h2 class="big grey-f">03</h2>
-						<h2 class="big">Feature 3</h2>
+						<h2 class="big grey-f">04</h2>
+						<h2 class="big">Committee Formation</h2>
 						<p>By creating committees within your organization, you can effectively manage and host events for all of your volunteering needs. You can schedule events specifically for these moments, and reach out to all committee members inside.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="flex-col sc-pad">
+			<div class="w-cont">
+				<div class="flex-box">
+					<div class="marg">
+						<h2 class="big grey-f">05</h2>
+						<h2>Create events, attending meetings, and connect with club members.</h2>
+					</div>
+				</div>
+				<div class="flex-box">
+					<div class="flex-col marg">
+						<img class="shad" src="../../media/events.png" alt="" width="100%">
 					</div>
 				</div>
 			</div>
@@ -342,21 +393,21 @@
 				<div class="flex-box">
 					<div class="fl-50 j-fl-st col-l marg t-l">
 						<h5>REFLECTIVE</h5>
-						<h2>Reviewing the Work</h2>
-						<p>Let's take a moment to reflect on how the journey of this design and development shook out. All in all, I was happy with this project, and so were my bosses!
+						<h2>Measuring Our Efforts</h2>
+						<p>This project in its infancy was my first foray into a major development app. Let's look back after all this time.</p>
 					</div>
 					<div class="fl-50 col-r marg">
 						<div class="blue-call">
-							<h4>Favorite Part</h4>
-							<p>The implementation for an editable grid with inputs on each field (User Form Priorities) came from an internal component within Power Apps. Finding this really helped materialize my dream for the app.</p>
+							<h4>Best Success</h4>
+							<p>This has been a very fun project. Being so closely situated with the user groups has been awesome. I am also excited to learn more about server-side development with PHP, too.</p>
 						</div>
 						<div class="blue-call">
-							<h4>Hindsight is 20/20</h4>
-							<p>Straying outside of user stories and scoping marginal feature updates is extremely easy to do, but delays the delivery of essential implementations. Something of which to be wary.</p>
+							<h4>Edits</h4>
+							<p>It's hard to say what I would do differently because this work has been ongoing and a continuous educational journey. I am proud of my efforts to refactor. I think something that would have helped from the start was having properly scoped agile fatures around user stories and specific pull requests to help prjoct scope creeping.</p>
 						</div>
 						<div class="blue-call">
-							<h4>Up Next</h4>
-							<p>The component for a visual file repository within the Individual Task View was removed due to issues with the existing Power Apps Component Framework (widget). Some development work in JavaScript will be forthcoming on that.</p>
+							<h4>In Progress</h4>
+							<p>Some current features on the horizon that I plan to implement are different functionalities to further aid the messaging and file sharing functions. I am also seeking new ways to aid the UX on the front end. I've already implemented modularization of refactored endpoints to help the developer experience. I am also using output buffering and per user transient caching in PHP to save API calls and query data less unnecessarily.</p>
 						</div>
 					</div>
 				</div>
@@ -417,5 +468,28 @@
 		</div>
 	</footer>
 	<script src="../../js/sticky-nav.js"></script>
+	<script src="../../js/sticky-nav.js"></script>
+	    <script>
+        function setupScroll(boxId, leftBtnId, rightBtnId, progressId) {
+            const box = document.getElementById(boxId);
+            const leftBtn = document.getElementById(leftBtnId);
+            const rightBtn = document.getElementById(rightBtnId);
+            const progress = document.getElementById(progressId);
+
+            const updateProgress = () => {
+            const total = box.scrollWidth - box.clientWidth;
+            progress.style.width = (box.scrollLeft / total) * 100 + '%';
+            };
+
+            const slide = () => box.querySelector('.scroll-card')?.clientWidth || 0;
+
+            leftBtn.onclick = () => box.scrollBy({ left: -slide() });
+            rightBtn.onclick = () => box.scrollBy({ left: slide() });
+            box.addEventListener('scroll', updateProgress);
+            window.addEventListener('resize', updateProgress);
+        }
+
+        setupScroll('scrollBox', 'leftBtn', 'rightBtn', 'progress');
+    </script>
 </body>
 </html>

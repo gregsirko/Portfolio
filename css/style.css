@@ -366,7 +366,6 @@
 		/* NAV */
 
 		.header {
-		 	background-color: #1a1a1a;
 			background: rgba(255, 255, 255, 0.8);
 			backdrop-filter: blur(8px);
 			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -470,7 +469,7 @@
 
 		.card {
 		 	margin: 1vw;
-		 	max-width: 31vw;
+		 	max-width: 30.5vw;
 			scroll-snap-align: center;
   			scroll-snap-stop: always;
   			flex: 0 0 auto;
